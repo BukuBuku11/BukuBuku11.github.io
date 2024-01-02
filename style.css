@@ -20,8 +20,7 @@ body{
     height: 100%;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    white-space: nowrap;
+    align-items: center; 
 }
 
 .navbar{ 
@@ -32,6 +31,7 @@ body{
     right: 0;
     left: 0;
     z-index: 1;
+    white-space: nowrap;
 }
 
 .navbar a{
@@ -204,18 +204,24 @@ img{
     }
 }
 
-@media (max-width:640px){
+@media (max-width:650px){
     .gallery .imgcontainer{
         grid-template-columns: repeat(1, 1fr);
         gap: 3px;
         grid-auto-flow: dense;
-    } 
-    .navbar .heading{
-        font-size: 25px;
-    }
-    .nav a{
-        font-size: 18px;
     }
 }
+
+@media (max-width: 575px) {
+    .navbar ul{
+        flex-direction: column;
+    }
+    .navbar{
+        height: 100px;
+        position: relative;
+    }
+}
+
+
 
 
