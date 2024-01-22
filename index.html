@@ -5,22 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.css">
-    <script src="main.js">ImageGallery</script>
+    <script src="main.js" defer></script>
     <title>ImageGallery</title>
 </head>
 <body>
     <nav class="navbar">
         <div class="container">
             <div class="heading">Anime Gallery</div>
+            <div class="clock">
+                <span class="hrs">00</span>
+                <span>:</span>
+                <span class="mins">00</span>
+                <span id="dotdot">:</span>
+                <span class="secs">00</span>
+            </div>
             <ul class="nav">
-                <li>
+                <!-- <li>
                     <a href="#"><span class="fa-solid fa-house"></span>Home</a>
                 </li>
                 <li>
                     <a href="#"><span class="fa-solid fa-circle-info"></span>About</a>
-                </li>
+                </li> -->
                 <li>
-                    <a href="#"><span class="fa-solid fa-layer-group"></span>Theme</a>
+                    <a href="#" id="theme-icon"><span class="fa-solid fa-moon">      
+                    </span></a>
                 </li>
             </ul>
         </div>
@@ -89,5 +97,6 @@
         <div class="bottom">&copy; Copyright 2024 Subhransu Dalei</div>
         </div>
     </footer>
+    
 </body>
 </html>
