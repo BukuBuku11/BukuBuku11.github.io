@@ -123,7 +123,6 @@ body{
 
 }
 
-
 .fa-solid.fa-sun{
     padding: 5px;
 }
@@ -286,7 +285,13 @@ img{
     .navbar .heading{
         font-size:larger;
     }
+}
 
+@media (max-width: 440px){
+    .navbar .heading{
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
